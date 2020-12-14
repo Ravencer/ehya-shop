@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет магазин одежды Ehya</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -32,7 +39,38 @@
           </li>
         </ul>
         <button class="header__button">Войти</button>
+        <button class="header__menu-button menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </div>
     </header>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__description">
+          <div class="hero__hash">
+            <span class="hero__hash-text"># Ready to be cool</span>
+          </div>
+          <h1 class="hero__title">Каждый может <br>быть крутым <br>и модным</h1>
+          <p class="hero__text">Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой стиль. Всё это вы можете найти здесь. Начните сейчас.</p>
+          <button class="hero__button">Подобрать одежду</button>
+          <div class="hero__icons">
+            <div class="hero__icons-wrapper">
+              <img src="img/hand-icon.svg" alt="Icon: hand" class="hero__icon">
+              <span class="hero__icon-text">Онлайн оплата</span>
+            </div>
+            <div class="hero__icons-wrapper">
+              <img src="img/shield-icon.svg" alt="Icon: shield" class="hero__icon">
+              <span class="hero__icon-text">Гарантия</span>
+            </div>
+            <div class="hero__icons-wrapper">
+              <img src="img/quality-icon.svg" alt="Icon: quality" class="hero__icon">
+              <span class="hero__icon-text">Качество</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>

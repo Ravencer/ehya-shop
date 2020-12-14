@@ -17,31 +17,35 @@ body {
 }
 
 @font-face {
-  font-family: "HK Grotesk";
-  src: url("../fonts/hkgrotesk-bold-web.woff") format("woff"), url("../fonts/hkgrotesk-bold-web.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HK Grotesk";
-  src: url("../fonts/hkgrotesk-light-web.woff") format("woff"), url("../fonts/hkgrotesk-light-web.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HK Grotesk";
-  src: url("../fonts/hkgrotesk-regular-web.woff") format("woff"), url("../fonts/hkgrotesk-regular-web.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HK Grotesk";
-  src: url("../fonts/hkgrotesk-medium-web.woff") format("woff"), url("../fonts/hkgrotesk-medium-web.woff2") format("woff2");
+  font-family: 'HK Grotesk';
+  src: url("../fonts/hkgrotesk-medium-web.woff2") format("woff2"), url("../fonts/hkgrotesk-medium-web.woff") format("woff");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/hkgrotesk-bold-web.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url("../fonts/hkgrotesk-light-web.woff2") format("woff2"), url("../fonts/hkgrotesk-light-web.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url("../fonts/hkgrotesk-regular-web.woff2") format("woff2"), url("../fonts/hkgrotesk-regular-web.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -383,11 +387,20 @@ template {
   display: none;
 }
 
+.header {
+  margin-bottom: 36px;
+}
+
 .header__container {
   padding: 26px 0px 26px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__logo {
+  width: 90;
+  height: 28px;
 }
 
 .header__link-list {
@@ -421,11 +434,113 @@ template {
   padding: 13px 24px;
   border: 2px solid #1565D8;
   filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
+  background-color: #fff;
   border-radius: 8px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   color: #1565D8;
+  cursor: pointer;
+  outline: none;
+}
+
+.header__menu-button {
+  display: none;
+}
+
+.hero__container {
+  background-image: url(../img/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  max-width: 1280px;
+  padding: 62px 0px 46px 107px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero__description {
+  max-width: 652px;
+}
+
+.hero__title {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: 0.2px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  color: #183B56;
+}
+
+.hero__text {
+  max-width: 652px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
+.hero__hash {
+  max-width: 175px;
+  padding: 6px 16px;
+  background: rgba(54, 179, 126, 0.1);
+  border-radius: 2000px;
+  text-align: center;
+}
+
+.hero__button {
+  padding: 15px 40px;
+  background-color: #183B56;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 52px;
+  margin-bottom: 49px;
+  cursor: pointer;
+  outline: none;
+}
+
+.hero__hash-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #36B37E;
+  text-transform: uppercase;
+}
+
+.hero__icons {
+  display: flex;
+  align-items: center;
+}
+
+.hero__icons-wrapper {
+  margin-right: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__icon {
+  margin-right: 8px;
+}
+
+.hero__icon-text {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #183B56;
 }
 /*# sourceMappingURL=style.css.map */
