@@ -408,13 +408,18 @@ template {
   display: none;
 }
 
+.header__mobile-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .header__link-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  margin-left: auto;
   margin-right: 50px;
 }
 
@@ -608,7 +613,7 @@ template {
   .hero__container {
     max-width: 92%;
     padding: 37px 0px 36px 18px;
-    background-position: center left 64%;
+    background-position: center left 63%;
   }
   .hero__title {
     font-style: normal;
@@ -637,19 +642,16 @@ template {
   .header__container {
     padding: 18px 0 18px 0px;
   }
-  .header__container--visible {
+  .header__mobile-menu--visible {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     position: fixed;
     top: 10px;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    right: 10px;
     overflow: scroll;
     box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
-    max-width: 92%;
-    width: 100%;
+    max-width: 325px;
     background-color: #fff;
     z-index: 100;
     flex-wrap: wrap;
@@ -671,9 +673,6 @@ template {
     margin-right: 0px;
     align-self: center;
     margin-bottom: 10px;
-  }
-  .header__logo--hidden {
-    display: none;
   }
   .header__button {
     width: 256px;
@@ -776,6 +775,12 @@ template {
     padding-right: 24px;
     padding-left: 24px;
   }
+  .header__mobile-menu--visible {
+    width: 100%;
+    max-width: 325px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -786,6 +791,10 @@ template {
   .header__container {
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .header__mobile-menu--visible {
+    max-width: 325px;
+    width: 92%;
   }
   .header__link-list {
     display: none;
@@ -814,12 +823,12 @@ template {
     width: 100%;
     padding-right: 23px;
     padding-left: 23px;
-    background-position: center bottom 40%;
-    background-image: url(../img/hero-image-mobile.jpg);
-    background-size: 100% 100%;
+    background-position: center left 75%;
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
   }
   .hero__hash {
-    margin-bottom: 23px;
+    margin-bottom: 18px;
   }
   .hero__title {
     font-style: normal;
@@ -863,6 +872,18 @@ template {
   }
   .hero__icons-wrapper:nth-child(1) {
     margin-right: 16px;
+  }
+}
+
+@media (max-width: 330px) {
+  .hero__container {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 23px;
+    padding-left: 23px;
+    background-position: center bottom 40%;
+    background-image: url(../img/hero-image-mobile.jpg);
+    background-size: 100% 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
