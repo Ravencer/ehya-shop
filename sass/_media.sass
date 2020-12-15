@@ -3,6 +3,21 @@
     max-width: 960px
   .hero__container
     max-width: 92%
+  .advantages
+    &__grid
+      margin-right: 30px
+      grid-gap: 25px
+    &__description
+      margin-left: 0px
+      margin-right: 0px
+      margin-bottom: 0px
+    &__title
+      font-size: 40px
+      line-height: 50px
+      letter-spacing: 0.2px
+    &__text
+      font-size: 18px
+      line-height: 32px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -28,6 +43,31 @@
       padding: 10px 20px
       font-size: 14px
       line-height: 20px
+  .advantages
+    &__container
+      flex-wrap: wrap
+    &__grid
+      margin-right: 0px
+      grid-gap: 30px
+      grid-template-columns: 1fr 320px
+    &__item
+      &--represented
+        max-width: 100%
+    &__description
+      margin-left: 0px
+      margin-right: 0px
+      margin-bottom: 0px
+      margin-top: 40px
+    &__title
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      margin-bottom: 24px
+      max-width: 100%
+    &__text
+      font-size: 20px
+      line-height: 36px
+      max-width: 100%
 @media (max-width: 768px)
   body
     padding-top: 102px
@@ -35,6 +75,7 @@
     max-width: 650px
     width: 92%
   .hero
+    margin-bottom: 82px
     &__container
       max-width: 728px
     &__container
@@ -128,6 +169,14 @@
         height: 2px
         background-color: $linecolor
         border-radius: 2px
+  .advantages
+    &__container
+      width: 92%
+      max-width: 673px
+    &__grid
+      grid-template-columns: 1fr 1fr
+    &__text
+      margin-bottom: 24px
 @media (max-width: 576px)
   body
     padding-top: 96px
@@ -183,6 +232,20 @@
         max-width: 325px
         padding-right: 24px
         padding-left: 24px
+  .advantages
+    &__container
+      max-width: 92%
+    &__grid
+      grid-template-rows: 1fr 220px
+      grid-template-columns: 1fr 1fr
+      grid-gap: 20px
+    &__item
+      grid-row: 2 / 3
+      height: 100%
+      &--represented
+        grid-row: 1 / 2
+        grid-column: 1 / 3
+        height: 550px
 @media (max-width: 400px)
   .container
     max-width: 576px
@@ -214,6 +277,7 @@
     &__button
       width: 100%
   .hero
+    margin-bottom: 64px
     &__container
       max-width: 100%
       width: 100%
@@ -259,6 +323,43 @@
         margin-right: 16px
         &:nth-child(1)
           margin-right: 16px
+  .advantages
+    &__container
+      max-width: 92%
+      justify-content: center
+    &__grid
+      grid-template-rows: 1fr 100px
+      grid-template-columns: 1fr 1fr
+      grid-gap: 14px
+    &__item
+      grid-row: 2 / 3
+      height: 100%
+      &--represented
+        grid-row: 1 / 2
+        grid-column: 1 / 3
+        height: 300px
+    &__description
+      align-items: center
+      text-align: center
+      display: flex
+      flex-direction: column
+      margin-top: 33px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      letter-spacing: 0.2px
+      max-width: 290px
+      margin-bottom: 19px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      max-width: 280px
+    &__link-wrapper
+      display: none
 @media (max-width: 330px)
   .hero
     &__container
