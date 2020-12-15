@@ -389,6 +389,7 @@ template {
 
 .header {
   margin-bottom: 36px;
+  background-color: #fff;
 }
 
 .header__container {
@@ -401,6 +402,10 @@ template {
 .header__logo {
   width: 90;
   height: 28px;
+}
+
+.header__menu-close {
+  display: none;
 }
 
 .header__link-list {
@@ -459,6 +464,7 @@ template {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border-radius: 8px;
 }
 
 .hero__description {
@@ -532,6 +538,8 @@ template {
 
 .hero__icon {
   margin-right: 8px;
+  height: 36px;
+  width: 36px;
 }
 
 .hero__icon-text {
@@ -542,5 +550,295 @@ template {
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #183B56;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .hero__container {
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .hero__container {
+    max-width: 92%;
+    padding: 36px 0px 36px 28px;
+    background-position: center left 64%;
+  }
+  .hero__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .hero__text {
+    max-width: 450px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .header__link-list {
+    margin-right: 20px;
+  }
+  .header__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .header__button {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 102px;
+  }
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+  .hero__container {
+    max-width: 728px;
+    width: 92%;
+  }
+  .hero__container {
+    max-width: 92%;
+    padding: 36px 0px 36px 28px;
+    background-position: center left 64%;
+  }
+  .hero__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .hero__text {
+    max-width: 400px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .header {
+    margin-bottom: 0px;
+  }
+  .header__container {
+    padding: 18px 0 18px 0px;
+  }
+  .header__container--visible {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: scroll;
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
+    max-width: 92%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    flex-wrap: wrap;
+    padding: 24px 36px 24px 36px;
+    align-content: flex-start;
+  }
+  .header__link-list {
+    display: none;
+  }
+  .header__link-list--visible {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    flex-basis: 100%;
+  }
+  .header__link-list--visible li {
+    margin-right: 0px;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  .header__logo--hidden {
+    display: none;
+  }
+  .header__button {
+    width: 256px;
+  }
+  .header__button--visible {
+    display: none;
+  }
+  .header--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    padding-top: 8px;
+  }
+  .header__menu-close--visible {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+  }
+  .menu-button {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .menu-button--visible {
+    display: none;
+  }
+  .menu-button__line {
+    width: 22px;
+    height: 2px;
+    background-color: #3A4C66;
+    border-radius: 2px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 96px;
+  }
+  .container {
+    width: 100%;
+  }
+  .hero__container {
+    max-width: 100%;
+    justify-content: center;
+    padding: 0px 20px 36px 20px;
+    min-height: 900px;
+    align-items: flex-end;
+    background-position: center left 71%;
+  }
+  .hero__description {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__hash {
+    flex-basis: 100%;
+    min-width: 196px;
+    padding: 2px 26px 2px 26px;
+  }
+  .hero__title {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .hero__text {
+    margin-top: 0px;
+    margin-bottom: 24px;
+  }
+  .hero__button {
+    margin-top: 24px;
+    margin-bottom: 22px;
+  }
+  .hero__icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero__icons-wrapper:nth-child(2) {
+    margin-right: 0px;
+  }
+  .hero__icons-wrapper:nth-child(3) {
+    flex-basis: 100%;
+    margin-top: 16px;
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .header__container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+  .header__container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .header__link-list {
+    display: none;
+  }
+  .header__link-list--visible {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    flex-basis: 100%;
+  }
+  .header__link-list--visible li {
+    margin-right: 0px;
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  .header__logo--hidden {
+    display: none;
+  }
+  .header__button {
+    width: 100%;
+  }
+  .hero__container {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 23px;
+    padding-left: 23px;
+    background-position: center bottom 40%;
+    background-image: url(../img/hero-image-mobile.jpg);
+    background-size: 100% 100%;
+  }
+  .hero__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hero__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 280px;
+  }
+  .hero__button {
+    padding: 13px 49px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .hero__icon {
+    width: 24px;
+    height: 24px;
+  }
+  .hero__icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero__icons-wrapper:nth-child(1) {
+    margin-right: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
