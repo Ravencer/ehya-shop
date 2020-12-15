@@ -732,6 +732,7 @@ template {
     min-height: 900px;
     align-items: flex-end;
     background-position: center left 71%;
+    border-radius: 0px;
   }
   .hero__description {
     justify-content: center;
