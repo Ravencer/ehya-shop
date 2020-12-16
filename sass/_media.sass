@@ -22,6 +22,7 @@
     &__title
       flex-basis: 100%
       text-align: left
+      margin-bottom: 20px
     &__tabs
       max-width: 100%
       &-targets
@@ -37,12 +38,12 @@
         grid-template-columns: repeat(4, 1fr)
         grid-template-rows: 441px 441px 441px
       &-image
-        max-width: 260px
+        max-width: 100%
         height: 350px
         object-fit: cover
         border-radius: 8px
       &-wrapper
-        max-width: 260px
+        max-width: 100%
         height: 441px
         display: flex
         align-items: flex-start
@@ -53,14 +54,10 @@
         padding: 0px
         text-align: left
         &--last
-          background-color: #fff
-          border-radius: 8px
-          height: 441px
-          width: 260px
-          display: flex
-          align-items: flex-start
-          justify-content: space-between
-          padding: 0px
+          width: 100%
+      &-plus
+        margin-bottom: 15px
+          
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -111,6 +108,47 @@
       font-size: 20px
       line-height: 36px
       max-width: 100%
+  .trends
+    &__title
+      flex-basis: 100%
+      text-align: center
+      margin-bottom: 20px
+    &__tabs
+      max-width: 100%
+      &-targets
+        flex-basis: 100%
+        text-align: center
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+    &__item
+      margin-right: 20px
+    &__content
+      &--active
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 441px 441px 441px 441px
+        grid-column-gap: 48px
+      &-image
+        max-width: 100%
+        height: 350px
+        object-fit: cover
+        border-radius: 8px
+      &-wrapper
+        max-width: 100%
+        height: 441px
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        justify-content: space-between
+        overflow: hidden
+        border-radius: 8px
+        padding: 0px
+        text-align: left
+        &--last
+          height: 441px
+          width: 100%
+          
 @media (max-width: 768px)
   body
     padding-top: 102px
@@ -131,6 +169,7 @@
       font-size: 48px
       line-height: 60px
       margin-bottom: 18px
+      margin-top: 26px
     &__text
       max-width: 400px
       font-style: normal
@@ -213,6 +252,7 @@
         background-color: $linecolor
         border-radius: 2px
   .advantages
+    margin-bottom: 41px
     &__container
       width: 92%
       max-width: 673px
@@ -220,6 +260,27 @@
       grid-template-columns: 1fr 1fr
     &__text
       margin-bottom: 24px
+  .trends
+    &__container
+      width: 78% 
+    &__title
+      margin-bottom: 5px
+    &__item
+      margin-right: 35px
+    &__tabs
+      &-targets
+        margin-bottom: 34px
+    &__content
+      &-image
+        margin-bottom: 20px
+      &-title
+        margin-bottom: 6px
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        letter-spacing: 0.2px
+        color: $primarytext
 @media (max-width: 576px)
   body
     padding-top: 96px
@@ -265,6 +326,21 @@
           margin-top: 16px
           justify-content: center
           margin-right: 0px
+  .trends
+    &__container
+      max-width: 92%
+    &__content
+      &--active
+        grid-column-gap: 15px
+      &-title
+        margin-left: 0px
+        font-size: 18px
+        line-height: 22px
+      &-price
+        margin-left: 0px
+    &__tabs
+      &-targets
+        margin-bottom: 35px
   .header
     &__container
       padding-right: 24px
@@ -413,4 +489,70 @@
       background-position: center bottom 40%
       background-image: url(../img/hero-image-mobile.jpg)
       background-size: 100% 100%
+  .advantages
+    margin-bottom: 63px
+  .trends
+    &__container
+      max-width: 92%
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__item
+      font-size: 16px
+      line-height: 22px
+      margin-right: 18px
+    &__tabs
+      margin-top: 19px
+    &__content
+      &-price
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+        margin-left: 0px
+      &-text
+        font-style: normal
+        font-weight: bold
+        font-size: 17px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+        margin-bottom: 23px
+      &-plus
+        height: 32px
+        width: 25px
+        margin-bottom: 15px
+      &-wrapper
+        height: 235px
+        justify-content: flex-start
+        &--last
+          height: 235px
+          align-items: flex-start
+      &-main
+        height: 170px
+        align-content: flex-end
+      &-title
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
+        margin-bottom: 3px
+        margin-left: 0px
+      &-icon
+        margin-right: 0px
+        width: 14px
+        height: 14px
+        margin-left: 9px
+        margin-top: 5.5px
+      &-image
+        height: 170px
+        margin-bottom: 13px
+      &--active
+        grid-column-gap: 10px
+        grid-template-rows: 235px 235px 235px 235px
+        grid-row-gap: 19px
+    &__tabs
+      &-targets
+        margin-bottom: 17px
   
