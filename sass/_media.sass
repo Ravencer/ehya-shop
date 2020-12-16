@@ -18,6 +18,49 @@
     &__text
       font-size: 18px
       line-height: 32px
+  .trends
+    &__title
+      flex-basis: 100%
+      text-align: left
+    &__tabs
+      max-width: 100%
+      &-targets
+        flex-basis: 100%
+        text-align: left
+    &__container
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+    &__content
+      &--active
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: 441px 441px 441px
+      &-image
+        max-width: 260px
+        height: 350px
+        object-fit: cover
+        border-radius: 8px
+      &-wrapper
+        max-width: 260px
+        height: 441px
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        justify-content: space-between
+        overflow: hidden
+        border-radius: 8px
+        padding: 0px
+        text-align: left
+        &--last
+          background-color: #fff
+          border-radius: 8px
+          height: 441px
+          width: 260px
+          display: flex
+          align-items: flex-start
+          justify-content: space-between
+          padding: 0px
 @media (max-width: 992px)
   .container
     max-width: 700px
