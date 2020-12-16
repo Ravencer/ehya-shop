@@ -1287,14 +1287,14 @@ template {
     background-size: cover;
   }
   .hero__hash {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
   .hero__title {
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 19px;
+    margin-bottom: 16px;
     margin-top: -1px;
   }
   .hero__text {
@@ -1330,7 +1330,7 @@ template {
     margin-right: 16px;
   }
   .hero__icons-wrapper:nth-child(1) {
-    margin-right: 16px;
+    margin-right: 13px;
   }
   .advantages__container {
     max-width: 92%;
