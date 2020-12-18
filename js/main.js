@@ -32,6 +32,21 @@ $(document).ready(function(){
     navigation: {
       nextEl: ".reviews-slider__button--next",
       prevEl: ".reviews-slider__button--prev",
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    autoplay: {
+      delay: 100000,
+      autoplayDisableOnInteraction: true
     }
+  });
+  $(".swiper-container").mouseenter(function() {
+    reviewsSlider.autoplay.stop();
+  });
+
+  $(".swiper-container").mouseleave(function() {
+    reviewsSlider.autoplay.start();
   });
 });
