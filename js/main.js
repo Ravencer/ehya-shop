@@ -27,4 +27,11 @@ $(document).ready(function(){
     $(activeContent).addClass('trends__content--active');
     $(this).addClass("trends__item--active");
   })
+  var reviewsSlider = new Swiper(".reviews-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".reviews-slider__button--next",
+      prevEl: ".reviews-slider__button--prev",
+    }
+  });
 });

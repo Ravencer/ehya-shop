@@ -800,6 +800,82 @@ template {
   grid-row-gap: 50px;
 }
 
+.reviews {
+  padding: 145px 0px 80px 0px;
+}
+
+.reviews-slider__text {
+  font-family: "HK Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  color: #5A7184;
+}
+
+.reviews-slider__profile {
+  font-family: "HK Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #5A7184;
+}
+
+.reviews-slider__item {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 730px;
+  margin: 45px auto 0;
+  padding: 0 62px 30px;
+  position: relative;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.swiper-slide::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-image: url(../img/quote-left-icon.svg);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 92px;
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -845,7 +921,7 @@ template {
   }
   .trends__content--active {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 441px 441px 441px;
+    grid-template-rows: 441px 441px;
   }
   .trends__content-image {
     max-width: 100%;
@@ -1082,7 +1158,7 @@ template {
   .menu-button {
     padding: 0;
     width: 24px;
-    height: 24px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -1332,6 +1408,9 @@ template {
   .hero__icons-wrapper:nth-child(1) {
     margin-right: 13px;
   }
+  .advantages {
+    margin-bottom: 39px;
+  }
   .advantages__container {
     max-width: 92%;
     justify-content: center;
@@ -1373,9 +1452,6 @@ template {
     line-height: 28px;
     max-width: 280px;
   }
-  .advantages__link-wrapper {
-    display: none;
-  }
 }
 
 @media (max-width: 330px) {
@@ -1389,7 +1465,7 @@ template {
     background-size: 100% 100%;
   }
   .advantages {
-    margin-bottom: 63px;
+    margin-bottom: 38px;
   }
   .trends__container {
     max-width: 92%;
