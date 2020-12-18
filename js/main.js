@@ -29,12 +29,8 @@ $(document).ready(function(){
   })
   var reviewsSlider = new Swiper(".reviews-slider", {
     loop: true,
-    navigation: {
-      nextEl: ".reviews-slider__button--next",
-      prevEl: ".reviews-slider__button--prev",
-    },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.reviews-swiper-pagination',
       type: 'bullets',
     },
     autoplay: {
@@ -42,11 +38,32 @@ $(document).ready(function(){
       autoplayDisableOnInteraction: true
     }
   });
-  $(".swiper-container").mouseenter(function() {
+  $(".reviews-swiper-container").mouseenter(function() {
     reviewsSlider.autoplay.stop();
   });
 
-  $(".swiper-container").mouseleave(function() {
+  $(".reviews-swiper-container").mouseleave(function() {
     reviewsSlider.autoplay.start();
+  });
+  var storiesSlider = new Swiper(".stories-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".stories__button-next",
+      prevEl: ".stories__button-prev"
+    },
+    effect: 'fade',
+    fadeEffect: {
+    crossFade: true
+  }
+  });
+  var ButtonNext = $(".stories__button-next");
+  var ButtonPrev = $(".stories__button-prev");
+  ButtonNext.on('click', function(){
+    ButtonNext.addClass('stories__button-next--active');
+    ButtonPrev.removeClass('stories__button-prev--active');
+  });
+  ButtonPrev.on('click', function(){
+    ButtonPrev.addClass('stories__button-prev--active');
+    ButtonNext.removeClass('stories__button-next--active');
   });
 });
