@@ -38,7 +38,7 @@ $(document).ready(function(){
       type: 'bullets',
     },
     autoplay: {
-      delay: 100000,
+      delay: 7000,
       autoplayDisableOnInteraction: true
     }
   });
