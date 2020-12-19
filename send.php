@@ -30,7 +30,7 @@ try {
     $mail->setFrom('lauriana880@gmail.com', 'Boris Glushan'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('ravencer880@gmail.com');
+    $mail->addAddress($email);
 
   // Отправка сообщения
   $mail->isHTML(true);

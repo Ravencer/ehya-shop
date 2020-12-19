@@ -413,6 +413,10 @@ template {
   margin-bottom: 120px;
 }
 
+.hero-thank {
+  margin-bottom: 30px;
+}
+
 .hero__container {
   background-image: url(../img/hero-image.jpg);
   background-repeat: no-repeat;
@@ -424,6 +428,11 @@ template {
   justify-content: flex-start;
   align-items: center;
   border-radius: 8px;
+}
+
+.hero__container-thank {
+  padding: 150px 0px 150px 107px;
+  background-size: cover;
 }
 
 .hero__description {
@@ -1383,9 +1392,17 @@ body {
     padding: 36px 0px 36px 28px;
     background-position: center left 64%;
   }
+  .hero__container-thank {
+    max-width: 92%;
+    padding: 36px 0px 36px 28px;
+    background-position: center left 64%;
+  }
   .hero__title {
     font-size: 50px;
     line-height: 60px;
+  }
+  .hero__title-thank {
+    max-width: 450px;
   }
   .hero__text {
     max-width: 450px;
@@ -1539,6 +1556,10 @@ body {
     line-height: 60px;
     margin-bottom: 18px;
     margin-top: 26px;
+  }
+  .hero__title-thank {
+    font-size: 40px;
+    line-height: 48px;
   }
   .hero__text {
     max-width: 400px;
