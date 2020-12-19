@@ -61,9 +61,17 @@ $(document).ready(function(){
   var ButtonPrev = $(".stories__button-prev");
   ButtonNext.on('click', function(){
     ButtonPrev.addClass("stories__button-prev--active");
+    storiesSlider.allowSlidePrev = true;
+    if(storiesSlider.previousIndex == 2){
+      ButtonNext.removeClass("stories__button-next--active");
+    }
   });
   ButtonPrev.on('click', function(){
     ButtonNext.addClass("stories__button-next--active");
+    storiesSlider.allowSlideNext = true;
+    if(storiesSlider.previousIndex == 2){
+      ButtonPrev.removeClass("stories__button-prev--active");
+    }
   });
   storiesSlider.on('reachEnd', function(){
     storiesSlider.allowSlideNext = false;
@@ -75,12 +83,13 @@ storiesSlider.on('reachBeginning', function(){
   storiesSlider.allowSlideNext = true;
   ButtonPrev.removeClass("stories__button-prev--active");
 });
+
   $('.form').each(function(){
     $(this).validate({
       errorClass: "invalid",
       messages: {
         emailNews: {
-          required: "Please fill this form with your Email"
+          required: "Пожалуйста, введите корректный Email"
         }
       },
     });
