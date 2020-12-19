@@ -66,4 +66,14 @@ $(document).ready(function(){
     ButtonPrev.addClass('stories__button-prev--active');
     ButtonNext.removeClass('stories__button-next--active');
   });
+  $('.form').each(function(){
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        emailNews: {
+          required: "Please fill this form with your Email"
+        }
+      },
+    });
+  })
 });
