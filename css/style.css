@@ -1367,6 +1367,10 @@ body {
   .stories-slider__card {
     max-width: 100%;
   }
+  .subscribe {
+    margin-right: 0px;
+    width: 650px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1485,6 +1489,26 @@ body {
   }
   .stories__description {
     margin-bottom: 35px;
+  }
+  .newsletter__description {
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .newsletter__text {
+    margin-bottom: 56px;
+    max-width: 436px;
+  }
+  .newsletter__title {
+    margin-bottom: 14px;
+  }
+  .newsletter__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe {
+    width: 447px;
   }
 }
 
@@ -1657,6 +1681,9 @@ body {
   .reviews-slider__text {
     margin-top: 24px;
   }
+  .stories {
+    margin-bottom: 80px;
+  }
   .stories-slider__item {
     max-width: 100%;
   }
@@ -1670,6 +1697,10 @@ body {
   }
   .stories-slider__text {
     max-width: 260px;
+  }
+  .newsletter__wrapper {
+    padding-top: 74px;
+    padding-bottom: 80px;
   }
 }
 
@@ -1971,6 +2002,48 @@ body {
   .reviews-slider__additional-text {
     display: none;
   }
+  .subscribe {
+    position: static;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .subscribe__input {
+    max-height: 48px;
+    height: 48px;
+    position: static;
+    padding-right: 15px;
+  }
+  .subscribe__button {
+    position: static;
+    width: 100%;
+    z-index: 1;
+  }
+  .newsletter__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .newsletter__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .newsletter__description {
+    max-width: 100%;
+    width: 100%;
+  }
+  .newsletter__wrapper {
+    padding-bottom: 150px;
+  }
+  .newsletter__input__group {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .invalid[for='emailNews'] {
+    position: static;
+  }
 }
 
 @media (max-width: 330px) {
@@ -2065,6 +2138,9 @@ body {
   .trends__tabs-targets {
     margin-bottom: 17px;
   }
+  .stories {
+    margin-bottom: 65px;
+  }
   .stories__description {
     margin-bottom: 26px;
   }
@@ -2125,6 +2201,16 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
+  }
+  .newsletter__wrapper {
+    padding-bottom: 115px;
+    padding-top: 66px;
+  }
+  .newsletter__title {
+    margin-bottom: 23px;
+  }
+  .newsletter__text {
+    margin-bottom: 34px;
   }
 }
 /*# sourceMappingURL=style.css.map */

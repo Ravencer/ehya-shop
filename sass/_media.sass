@@ -76,6 +76,9 @@
         justify-content: center
       &__card
         max-width: 100%
+  .subscribe
+    margin-right: 0px
+    width: 650px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -175,7 +178,22 @@
       margin-bottom: 14px
     &__description
       margin-bottom: 35px
-    
+  .newsletter
+    &__description
+      flex-basis: 100%
+      justify-content: center
+      text-align: center
+    &__text
+      margin-bottom: 56px
+      max-width: 436px
+    &__title
+      margin-bottom: 14px
+    &__wrapper
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+  .subscribe
+    width: 447px
 @media (max-width: 768px)
   body
     padding-top: 102px
@@ -320,6 +338,7 @@
       &__text
         margin-top: 24px
   .stories
+    margin-bottom: 80px
     &-slider
       &__item
         max-width: 100%
@@ -332,6 +351,10 @@
         padding: 20px 13px 0px 20px
       &__text
         max-width: 260px
+  .newsletter
+    &__wrapper
+      padding-top: 74px
+      padding-bottom: 80px
 @media (max-width: 576px)
   body
     padding-top: 96px
@@ -583,6 +606,41 @@
         
       &__additional-text
         display: none
+  .subscribe
+    position: static
+    max-width: 100%
+    width: 100%
+    &__input
+      max-height: 48px
+      height: 48px
+      position: static
+      padding-right: 15px
+    &__button
+      position: static
+      width: 100%
+      z-index: 1
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+  .newsletter
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__description
+      max-width: 100%
+      width: 100%
+    &__wrapper
+      padding-bottom: 150px
+    &__input
+      &__group
+        width: 100%
+        margin-bottom: 10px
+  .invalid[for='emailNews']
+    position: static
 @media (max-width: 330px)
   .hero
     &__container
@@ -661,6 +719,7 @@
       &-targets
         margin-bottom: 17px
   .stories 
+    margin-bottom: 65px
     &__description
       margin-bottom: 26px
     &__button
@@ -710,5 +769,14 @@
         font-weight: 600
         font-size: 16px
         line-height: 22px
+  .newsletter
+    &__wrapper
+      padding-bottom: 115px
+      padding-top: 66px
+    &__title
+      margin-bottom: 23px
+    &__text
+      margin-bottom: 34px
+  
   
   
