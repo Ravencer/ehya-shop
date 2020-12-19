@@ -990,7 +990,8 @@ template {
 .stories-slider__image-wrapper {
   width: 312px;
   height: 317px;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   overflow: hidden;
 }
 

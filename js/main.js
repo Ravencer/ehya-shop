@@ -30,7 +30,7 @@ $(document).ready(function(){
   var reviewsSlider = new Swiper(".reviews-slider", {
     loop: true,
     pagination: {
-      el: '.reviews-swiper-pagination',
+      el: '.swiper-pagination',
       type: 'bullets',
     },
     autoplay: {
@@ -56,16 +56,25 @@ $(document).ready(function(){
     crossFade: true
   }
   });
+  
   var ButtonNext = $(".stories__button-next");
   var ButtonPrev = $(".stories__button-prev");
   ButtonNext.on('click', function(){
-    ButtonNext.addClass('stories__button-next--active');
-    ButtonPrev.removeClass('stories__button-prev--active');
+    ButtonPrev.addClass("stories__button-prev--active");
   });
   ButtonPrev.on('click', function(){
-    ButtonPrev.addClass('stories__button-prev--active');
-    ButtonNext.removeClass('stories__button-next--active');
+    ButtonNext.addClass("stories__button-next--active");
   });
+  storiesSlider.on('reachEnd', function(){
+    storiesSlider.allowSlideNext = false;
+    storiesSlider.allowSlidePrev = true;
+    ButtonNext.removeClass("stories__button-next--active");
+});
+storiesSlider.on('reachBeginning', function(){
+  storiesSlider.allowSlidePrev = false;
+  storiesSlider.allowSlideNext = true;
+  ButtonPrev.removeClass("stories__button-prev--active");
+});
   $('.form').each(function(){
     $(this).validate({
       errorClass: "invalid",
