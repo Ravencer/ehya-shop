@@ -449,6 +449,7 @@ template {
   margin-top: 28px;
   margin-bottom: 28px;
   color: #183B56;
+  font-feature-settings: "locl" 0;
 }
 
 .hero__text {
@@ -519,6 +520,7 @@ template {
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #183B56;
+  font-feature-settings: "locl" 0;
 }
 
 .advantages {
@@ -577,6 +579,7 @@ template {
   margin-top: 0px;
   margin-bottom: 24px;
   max-width: 412px;
+  font-feature-settings: "locl" 0;
 }
 
 .advantages__text {
@@ -622,6 +625,7 @@ template {
   letter-spacing: 0.2px;
   color: #183B56;
   margin-bottom: 24px;
+  font-feature-settings: "locl" 0;
 }
 
 .trends__tabs {
@@ -677,6 +681,7 @@ template {
   line-height: 32px;
   letter-spacing: 0.2px;
   color: #183B56;
+  font-feature-settings: "locl" 0;
 }
 
 .trends__content-title--last {
@@ -706,6 +711,7 @@ template {
   text-align: center;
   letter-spacing: 0.2px;
   margin: 0px;
+  font-feature-settings: "locl" 0;
 }
 
 .trends__content-main {
@@ -771,6 +777,7 @@ template {
   line-height: 42px;
   text-align: center;
   color: #5A7184;
+  font-feature-settings: "locl" 0;
 }
 
 .reviews-slider__profile {
@@ -783,6 +790,7 @@ template {
   letter-spacing: 0.2px;
   color: #183B56;
   margin-top: 10px;
+  font-feature-settings: "locl" 0;
 }
 
 .reviews-slider__item {
@@ -968,6 +976,7 @@ template {
   color: #183B56;
   margin: 0;
   margin-bottom: 21px;
+  font-feature-settings: "locl" 0;
 }
 
 .stories-slider__link {
@@ -1056,6 +1065,7 @@ template {
   color: #183B56;
   margin-top: 28px;
   margin-bottom: 24px;
+  font-feature-settings: "locl" 0;
 }
 
 .stories__text {
@@ -1126,6 +1136,7 @@ template {
   color: #ffffff;
   margin-bottom: 14px;
   margin-top: 0px;
+  font-feature-settings: "locl" 0;
 }
 
 .newsletter__text {
