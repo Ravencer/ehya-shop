@@ -119,28 +119,18 @@ function closeModal (event){
     $(this).validate({
       errorClass: "invalid",
       messages: {
-        name: {
-          required: "Пожалуйста, введите своё имя",
-          minlength: "Имя должно состоять хотя бы из 2 символов"
+        login: {
+          required: "Пожалуйста, введите корректный логин",
+          minlength: "Логин должно состоять хотя бы из 5 символов"
         },
-        email: {
-          required: "Пожалуйста, введите корректный Email"
-        },
-        phone: {
-          required: "Введите номер в корректном формате",
-          minlength: "Введите номер в корректном формате"
+        password: {
+          required: "Пожалуйста, введите корректный пароль",
+          minlength: "Пароль должен состоять хотя бы из 5 символов"
         },
         emailNews: {
           required: "Пожалуйста, введите корректный Email"
         }
       },
     });
-  });
-  $('.modal__input--tel').mask('+7 (ZZZ) ZZZ-ZZ-ZZ',{
-    translation: {
-      'Z': {
-        pattern: /[0-9]/, optional: true
-      }
-    }
   });
 });

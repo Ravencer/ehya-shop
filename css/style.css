@@ -1278,17 +1278,6 @@ template {
   cursor: pointer;
 }
 
-.modal__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  margin-bottom: 15px;
-  margin-top: 0;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .modal__form {
   display: flex;
   align-items: center;
@@ -1300,8 +1289,8 @@ template {
   font-family: "HK Grotesk", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 22px;
+  line-height: 24px;
   margin-bottom: 15px;
   margin-top: 0;
   text-transform: uppercase;
@@ -1344,6 +1333,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   flex-basis: 100%;
+  margin-top: 15px;
 }
 
 .to-top {
@@ -1362,16 +1352,12 @@ template {
   order: 1;
 }
 
-.modal__message {
-  order: 2;
-}
-
 .modal__button {
-  order: 6;
+  order: 4;
 }
 
 .modal__info {
-  order: 5;
+  order: 3;
   margin-bottom: 15px;
 }
 

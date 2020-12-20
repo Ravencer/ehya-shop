@@ -127,26 +127,17 @@
         <h3 class="modal__title">Ehya Shop</h3>
             <form action="send.php" method="POST" class="modal__form form">
               <div class="modal__input-group modal__input-group--1">
-                <input type="text" placeholder="Ваше Имя*" class="input modal__input modal__input--1"
-              name="name" required minlength="2"
+                <input type="text" placeholder="Логин*" class="input modal__input modal__input--1"
+              name="login" required minlength="5"
               >
               </div>
   
               <div class="modal__input-group ">
-                <input type="tel" placeholder="Номер телефона*" class="input modal__input modal__input--tel modal__input--2"
-              name="phone" required minlength="18"
+                <input type="text" placeholder="Пароль*" class="input modal__input modal__input--tel modal__input--2"
+              name="password" required minlength="5"
               >
               </div>
   
-              <div class="modal__input-group">
-                <input type="email" placeholder="Email*" class="input modal__input modal__input--3"
-              name="email" required
-              >
-              </div>
-  
-              <textarea class="message modal__message" placeholder="Сообщение..."
-              name="message"
-              ></textarea>
   
               <button class="button modal__button" type="submit">Отправить</button>
   
