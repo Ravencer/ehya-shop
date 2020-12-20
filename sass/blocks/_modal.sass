@@ -6,7 +6,7 @@
     top: 0
     right: 0
     bottom: 0
-    background-color: rgba(0, 180, 223, 0.39)
+    background-color: rgba(0, 90, 223, 0.39)
     z-index: 100
     visibility: hidden
     opacity: 0
@@ -71,6 +71,7 @@
   &__input
     width: 100%
     font-family: "Open Sans", sans-serif
+    border: 1px solid $primarycolor
     &-group
       width: 100%
       margin-top: 15px
@@ -81,6 +82,7 @@
     min-height: 123px
     margin-top: 15px
     margin-bottom: 15px
+    border: 1px solid $primarycolor
   &__info
     font-style: normal
     font-weight: bold
@@ -97,3 +99,14 @@
   background-color: #fff
   padding: 18px
   z-index: 35
+.modal
+  &__input
+    &-group
+      order: 1
+  &__message
+    order: 2
+  &__button
+    order: 6
+  &__info
+    order: 5
+    margin-bottom: 15px

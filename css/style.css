@@ -413,124 +413,6 @@ template {
   display: none;
 }
 
-.hero {
-  margin-bottom: 120px;
-}
-
-.hero-thank {
-  margin-bottom: 30px;
-}
-
-.hero__container {
-  background-image: url(../img/hero-image.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  max-width: 1280px;
-  padding: 62px 0px 46px 107px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 8px;
-}
-
-.hero__container-thank {
-  padding: 150px 0px 150px 107px;
-  background-size: cover;
-}
-
-.hero__description {
-  max-width: 652px;
-}
-
-.hero__title {
-  font-family: 'HK Grotesk', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 68px;
-  letter-spacing: 0.2px;
-  margin-top: 28px;
-  margin-bottom: 28px;
-  color: #183B56;
-  font-feature-settings: "locl" 0;
-}
-
-.hero__text {
-  max-width: 652px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 36px;
-  color: #5A7184;
-  margin-bottom: 0px;
-}
-
-.hero__hash {
-  max-width: 175px;
-  padding: 6px 16px;
-  background: rgba(54, 179, 126, 0.1);
-  border-radius: 2000px;
-  text-align: center;
-}
-
-.hero__button {
-  padding: 15px 40px;
-  background-color: #183B56;
-  border-radius: 8px;
-  border: none;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-  margin-top: 52px;
-  margin-bottom: 47px;
-  cursor: pointer;
-  outline: none;
-}
-
-.hero__button:hover {
-  animation: button-animation-1 0.3s linear 1 normal running 0s forwards;
-}
-
-.hero__hash-text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  color: #36B37E;
-  text-transform: uppercase;
-}
-
-.hero__icons {
-  display: flex;
-  align-items: center;
-}
-
-.hero__icons-wrapper {
-  margin-right: 37px;
-  display: flex;
-  align-items: center;
-}
-
-.hero__icon {
-  margin-right: 8px;
-  height: 36px;
-  width: 36px;
-}
-
-.hero__icon-text {
-  font-family: 'HK Grotesk', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  color: #183B56;
-  font-feature-settings: "locl" 0;
-}
-
 .advantages {
   margin-bottom: 103px;
 }
@@ -1353,7 +1235,7 @@ template {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 180, 223, 0.39);
+  background-color: rgba(0, 90, 223, 0.39);
   z-index: 100;
   visibility: hidden;
   opacity: 0;
@@ -1436,6 +1318,7 @@ template {
 .modal__input {
   width: 100%;
   font-family: "Open Sans", sans-serif;
+  border: 1px solid #1565D8;
 }
 
 .modal__input-group {
@@ -1452,6 +1335,7 @@ template {
   min-height: 123px;
   margin-top: 15px;
   margin-bottom: 15px;
+  border: 1px solid #1565D8;
 }
 
 .modal__info {
@@ -1472,6 +1356,23 @@ template {
   background-color: #fff;
   padding: 18px;
   z-index: 35;
+}
+
+.modal__input-group {
+  order: 1;
+}
+
+.modal__message {
+  order: 2;
+}
+
+.modal__button {
+  order: 6;
+}
+
+.modal__info {
+  order: 5;
+  margin-bottom: 15px;
 }
 
 * {
@@ -1537,12 +1438,15 @@ a:hover {
 .invalid {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .input {
   background-color: #f9f1f1;
   border-radius: 4px;
-  border: none;
+  outline: none;
   padding: 0 23px;
   height: 50px;
   font-style: normal;
@@ -1557,7 +1461,7 @@ a:hover {
   background-color: #f9f1f1;
   border-radius: 4px;
   padding: 18px 23px;
-  border: none;
+  outline: none;
   resize: none;
   font-style: normal;
   font-weight: normal;
@@ -1571,7 +1475,7 @@ a:hover {
   min-width: 160px;
   min-height: 50px;
   padding: 18px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
   color: #ffffff;
   background-color: #1565D8;
@@ -1615,6 +1519,124 @@ a:hover {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+.hero {
+  margin-bottom: 120px;
+}
+
+.hero-thank {
+  margin-bottom: 30px;
+}
+
+.hero__container {
+  background-image: url(../img/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  max-width: 1280px;
+  padding: 62px 0px 46px 107px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.hero__container-thank {
+  padding: 150px 0px 150px 107px;
+  background-size: cover;
+}
+
+.hero__description {
+  max-width: 652px;
+}
+
+.hero__title {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: 0.2px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  color: #183B56;
+  font-feature-settings: "locl" 0;
+}
+
+.hero__text {
+  max-width: 652px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+  margin-bottom: 0px;
+}
+
+.hero__hash {
+  max-width: 175px;
+  padding: 6px 16px;
+  background: rgba(54, 179, 126, 0.1);
+  border-radius: 2000px;
+  text-align: center;
+}
+
+.hero__button {
+  padding: 15px 40px;
+  background-color: #183B56;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 52px;
+  margin-bottom: 47px;
+  cursor: pointer;
+  outline: none;
+}
+
+.hero__button:hover {
+  animation: button-animation-1 0.3s linear 1 normal running 0s forwards;
+}
+
+.hero__hash-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #36B37E;
+  text-transform: uppercase;
+}
+
+.hero__icons {
+  display: flex;
+  align-items: center;
+}
+
+.hero__icons-wrapper {
+  margin-right: 37px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__icon {
+  margin-right: 8px;
+  height: 36px;
+  width: 36px;
+}
+
+.hero__icon-text {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  font-feature-settings: "locl" 0;
 }
 
 @media (max-width: 1200px) {
@@ -2598,7 +2620,7 @@ a:hover {
     height: 40px;
   }
   .modal__dialog {
-    padding: 18px 55px;
+    padding: 18px 25px;
   }
   .modal__input-group {
     order: 1;
