@@ -1,5 +1,21 @@
 *
   box-sizing: border-box
+@keyframes button-animation-1
+  0%
+    background-color: $primarytext
+  100%
+    background-color: $primarycolor
+@keyframes button-animation-2
+  0%
+    background-color: $primarycolor
+  100%
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
+@keyframes button-animation-3
+  0%
+    background-color: #ffffff
+  100%
+    background: $primarycolor
+    color: #ffffff
 body
   font-family: 'Open Sans', sans-serif
   overflow-x: hidden
@@ -15,6 +31,10 @@ body
   position: absolute
   top: 60px
   left: 0px
+a
+  &:hover
+    text-decoration: underline
+    text-decoration-color: $primarycolor
 .invalid
   color: $primary
   border-bottom: 1px solid $primary
@@ -54,6 +74,8 @@ body
   border-radius: 4px
   cursor: pointer
   outline: none
+  &:hover
+    animation: button-animation-2 0.3s linear 1 normal running 0s forwards
 @font-face 
   font-family: 'HK Grotesk'
   src: url('../fonts/hkgrotesk-medium-web.woff2') format('woff2'), url('../fonts/hkgrotesk-medium-web.woff') format('woff')

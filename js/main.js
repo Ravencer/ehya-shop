@@ -56,7 +56,12 @@ $(document).ready(function(){
     crossFade: true
   }
   });
-  
+  var ModalOverlay = $(".modal__overlay");
+  var ModalDialog = $(".modal__dialog");
+  ModalOverlay.on('click', function(){
+    ModalOverlay.removeClass("modal__overlay--visible");
+    ModalDialog.removeClass("modal__dialog--visible");
+  });
   var ButtonNext = $(".stories__button-next");
   var ButtonPrev = $(".stories__button-prev");
   ButtonNext.on('click', function(){

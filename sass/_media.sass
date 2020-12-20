@@ -85,6 +85,12 @@
 @media (max-width: 992px)
   .container
     max-width: 700px
+  a
+    &:hover
+      text-decoration: none
+  .button
+    &:hover
+      animation: none
   .hero
     &__container
       max-width: 92%
@@ -103,6 +109,9 @@
       max-width: 450px
       font-size: 20px
       line-height: 32px
+    &__button
+      &:hover
+        animation: none
   .header
     &__link-list
       margin-right: 20px
@@ -113,6 +122,8 @@
       padding: 10px 20px
       font-size: 14px
       line-height: 20px
+      &:hover
+        animation: none
   .advantages
     &__container
       flex-wrap: wrap
@@ -178,6 +189,9 @@
         &--last
           height: 441px
           width: 100%
+      &-main
+        &:hover
+          animation: none
   .stories
     &__container
       padding-top: 74px
@@ -203,6 +217,9 @@
       align-items: center
   .subscribe
     width: 447px
+    &__button
+      &:hover
+        animation: none
   .footer
     &-wrapper
       display: grid
@@ -409,6 +426,11 @@
         flex-basis: 100%
 @media (max-width: 670px)
   .footer
+    &__image
+      &-wrapper
+        text-align: center
+        justify-content: center
+        align-items: center
     &-wrapper
       display: grid
       grid-column-gap: 0px
@@ -458,12 +480,14 @@
         flex-direction: column
         justify-content: center
         align-items: center
+        text-align: center
         &-wrapper
           display: flex
           align-items: center
           justify-content: center
           margin-left: auto
           margin-right: auto
+          text-align: center
           
         
 @media (max-width: 576px)
@@ -801,8 +825,8 @@
         margin-bottom: 16px
     &__image
       &-wrapper
-        width: 77px
-        height: 24px
+        width: 90px
+        height: 28px
         margin-bottom: 16px
     &__icons
       &-wrapper
