@@ -225,6 +225,18 @@
     &__contacts
       grid-row: 2 / 3
       grid-column: 3 / 4
+  .modal
+    &__input
+      &-group
+        order: 1
+    &__message
+      order: 2
+    &__button
+      order: 6
+    &__info
+      order: 5
+      margin-bottom: 15px
+      flex-basis: 100%
 @media (max-width: 768px)
   body
     padding-top: 102px
@@ -389,6 +401,12 @@
     &__wrapper
       padding-top: 74px
       padding-bottom: 80px
+  .modal
+    &__dialog
+      padding: 18px 55px
+    &__input
+      &-group
+        flex-basis: 100%
 @media (max-width: 670px)
   .footer
     &-wrapper
@@ -453,6 +471,9 @@
     padding-top: 96px
   .container
     width: 100%
+  .modal
+    &__dialog
+      width: 95%
   .hero
     &__container
       max-width: 100%
@@ -787,6 +808,23 @@
       &-wrapper
         width: 42px
         height: 40px
+  .modal
+    &__dialog
+      padding: 18px 55px
+    &__input
+      &-group
+        order: 1
+    &__message
+      order: 2
+    &__button
+      order: 6
+    &__info
+      order: 5
+      margin-bottom: 15px
+    &__title
+      &--inline
+        min-width: 168px
+        margin-bottom: 20px
 @media (max-width: 330px)
   .hero
     &__container
