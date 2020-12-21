@@ -589,7 +589,7 @@ template {
   flex-basis: 100%;
   width: 23px;
   height: 29px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .trends__content-text {
@@ -602,6 +602,7 @@ template {
   letter-spacing: 0.2px;
   margin: 0px;
   font-feature-settings: "locl" 0;
+  margin-top: 20px;
 }
 
 .trends__content-main {
@@ -2673,6 +2674,7 @@ a:hover {
     text-align: center;
     letter-spacing: 0.2px;
     margin-bottom: 23px;
+    margin-top: 0px;
   }
   .trends__content-plus {
     height: 32px;
@@ -2795,6 +2797,12 @@ a:hover {
   }
   .footer__container {
     max-width: 88%;
+  }
+  .header--fixed {
+    padding-top: 20px;
+  }
+  body {
+    padding-top: 108px;
   }
 }
 /*# sourceMappingURL=style.css.map */
