@@ -2636,6 +2636,9 @@ a:hover {
 }
 
 @media (max-width: 330px) {
+  .hero {
+    margin-bottom: 61px;
+  }
   .hero__container {
     max-width: 100%;
     width: 100%;
@@ -2647,6 +2650,9 @@ a:hover {
   }
   .advantages {
     margin-bottom: 38px;
+  }
+  .advantages__description {
+    margin-top: 36px;
   }
   .trends {
     margin-bottom: 19px;
@@ -2726,7 +2732,7 @@ a:hover {
     grid-row-gap: 19px;
   }
   .trends__tabs-targets {
-    margin-bottom: 17px;
+    margin-bottom: 19px;
   }
   .stories {
     margin-bottom: 65px;
@@ -2810,6 +2816,19 @@ a:hover {
   }
   body {
     padding-top: 108px;
+  }
+  .reviews-slider__profile {
+    margin-bottom: 5px;
+    margin-top: 6px;
+  }
+  .stories__container {
+    padding-top: 46px;
+  }
+  .reviews {
+    padding-bottom: 43px;
+  }
+  .header__container {
+    padding-right: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
