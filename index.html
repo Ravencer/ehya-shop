@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header header--fixed">
+    <header id="main-page" class="header header--fixed">
       <div class="container header__container">
         <a href="index.html" class="header__logo">
           <img src="img/logo.svg" alt="Icon: Logo" class="header__image">
@@ -24,19 +24,19 @@
         <div class="header__mobile-menu">
           <ul class="header__link-list">
           <li class="header__link-item">
-            <a href="#" class="header__link">Главная</a>
+            <a href="#main-page" class="header__link">Главная</a>
           </li>
           <li class="header__link-item">
-            <a href="#" class="header__link">Новинки</a>
+            <a href="#new-collection" class="header__link">Новинки</a>
           </li>
           <li class="header__link-item">
-            <a href="#" class="header__link">Тренды</a>
+            <a href="#trends-section" class="header__link">Тренды</a>
           </li>
           <li class="header__link-item">
-            <a href="#" class="header__link">Отзывы</a>
+            <a href="#reviews-section" class="header__link">Отзывы</a>
           </li>
           <li class="header__link-item">
-            <a href="#" class="header__link">Контакты</a>
+            <a href="#contacts-section" class="header__link">Контакты</a>
           </li>
         </ul>
         <button data-toggle="modal" class="header__button header__button--visible">Войти</button>
@@ -364,7 +364,7 @@
         </form>
       </div>
     </section>
-    <footer class="footer">
+    <footer id="contacts-section" class="footer">
       <div class="container footer__container">
         <div class="footer-wrapper">
           <div class="footer__logo-icons">
@@ -448,7 +448,7 @@
             </form>
       </div>
     </div>
-    <a href="#" class="to-top">
+    <a href="#main-page" class="to-top">
       <img src="img/return.png" alt="Наверх">
     </a>
     <script src="js/jquery-3.5.1.min.js"></script>

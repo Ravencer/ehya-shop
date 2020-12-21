@@ -536,6 +536,11 @@ template {
   margin-right: 41px;
 }
 
+.trends__item:hover {
+  text-decoration: underline;
+  text-decoration-color: #1565D8;
+}
+
 .trends__item:nth-child(3) {
   margin-right: 0px;
 }
@@ -1830,6 +1835,10 @@ a:hover {
   }
   .trends__item {
     margin-right: 20px;
+  }
+  .trends__item:hover {
+    text-decoration: none;
+    text-decoration-color: #1565D8;
   }
   .trends__content--active {
     grid-template-columns: repeat(2, 1fr);
