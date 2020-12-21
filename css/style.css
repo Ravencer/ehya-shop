@@ -2815,7 +2815,7 @@ a:hover {
     padding-top: 20px;
   }
   body {
-    padding-top: 108px;
+    padding-top: 89px;
   }
   .reviews-slider__profile {
     margin-bottom: 5px;
@@ -2829,6 +2829,12 @@ a:hover {
   }
   .header__container {
     padding-right: 12px;
+  }
+  .header--fixed {
+    padding-top: 0px;
+  }
+  .hero__icon-text {
+    margin-bottom: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
